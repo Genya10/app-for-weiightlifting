@@ -14,7 +14,8 @@ let sum = 0;
 
 btnKg1.addEventListener('click', function () {
   for (let i = 0; i < sumAll.length; i++) {
-    let sumNumb = sumAll[i].value;
+    let sumNumb = sumAll[i];
+    console.log(sumNumb);
     let numb = Number(sumNumb.textContent);
     sum += numb;
   }

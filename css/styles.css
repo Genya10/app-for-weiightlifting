@@ -108,6 +108,7 @@ input {
     border-radius: 8px;
     border: 1px solid black;
     text-align: center;
+    padding-top: 2px;
 }
 
 .two-row {
@@ -213,4 +214,7 @@ input {
 .btn-total1,
 .btn-total3 {
     margin-left: 70px;
+}
+.average{
+    padding-bottom: 30px;
 }
