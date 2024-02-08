@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 const totalKg = document.querySelector('.span-kg');
 const totalNumb = document.querySelector('.span-numb');
 const average = document.querySelector('.span-average');
@@ -12,7 +12,7 @@ let sumAll = document.querySelectorAll('.sum');
 console.log(sumAll);
 let sum = 0;
 
-btnKg1.addEventListener('click', function () {
+btnKg1.addEventListener('click',  ()=> {
   for (let i = 0; i < sumAll.length; i++) {
     let sumNumb = sumAll[i];
     console.log(sumNumb);
@@ -22,22 +22,7 @@ btnKg1.addEventListener('click', function () {
   totalKg.textContent = sum;
 });
 
-
-/*let numbAll = document.querySelectorAll('.numb');
-console.log(numbAll);
-let number = 0;
-btnKg2.addEventListener('click', function () {
-  for (let i = 0; i < numbAll.length; i++) {
-    let suNumb = numbAll[i];
-    console.log(suNumb);
-    let numb1 = Number(suNumb.textContent);
-    console.log(numb1);
-    number += numb1;
-  }
-  totalNumb.textContent = number;
-});*/
-
-btnKg2.addEventListener('click', function () {
+btnKg2.addEventListener('click', ()=> {
   let sumNumb = 
       (inp1Two.value * inp1Three.value)
     + (inp1Five.value * inp1Six.value)
@@ -52,9 +37,35 @@ btnKg2.addEventListener('click', function () {
   totalNumb.textContent = sumNumb;
 });
 
-btnKg3.addEventListener('click', function () {
+/*btnKg2.addEventListener('click',()=>{
+  const numbInput = document.querySelectorAll('.numb');
+  let sum = 0;
+
+  numbInput.forEach((elem)=>{
+    const value = parseFloat(elem.value);
+    if(!isNaN(value)){
+      sum += value;
+    }
+  });
+  totalNumb.textContent = sum;
+})*/
+
+btnKg3.addEventListener('click', ()=> {
   let aver = totalKg.textContent / totalNumb.textContent;
   let averMath = aver.toFixed(2);
   average.textContent = averMath;
 });
 
+/*let numbAll = document.querySelectorAll('.numb');
+console.log(numbAll);
+let number = 0;
+btnKg2.addEventListener('click', function () {
+  for (let i = 0; i < numbAll.length; i++) {
+    let suNumb = numbAll[i];
+    console.log(suNumb);
+    let numb1 = Number(suNumb.textContent);
+    console.log(numb1);
+    number += numb1;
+  }
+  totalNumb.textContent = number;
+});*/
