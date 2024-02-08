@@ -38,7 +38,8 @@ btnKg2.addEventListener('click', function () {
 });*/
 
 btnKg2.addEventListener('click', function () {
-  let sumNumb = (inp1Two.value * inp1Three.value)
+  let sumNumb = 
+      (inp1Two.value * inp1Three.value)
     + (inp1Five.value * inp1Six.value)
     + (inp2Two.value * inp2Three.value)
     + (inp2Five.value * inp2Six.value)
