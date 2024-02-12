@@ -7,10 +7,27 @@ body {
 }
 
 .img {
+    background-size: cover;
+    background-position: center;   
     display: flex;
     gap: 1rem;
     margin-top: 1.9rem;
     margin-bottom: 1.9rem;
+}
+.img1{
+    background-image: url("../img/images.jpg");
+    width: 14rem;
+    height: 12.5rem;
+}
+.img2{
+    background-image: url("../img/shtangist.png");
+    width: 14rem;
+    height: 12.5rem;
+}
+.img3{
+    background-image: url("../img/sport_shtangist.gif");
+    width: 14rem;
+    height: 12.5rem;
 }
 
 .title {
@@ -219,3 +236,25 @@ input {
 .average{
     padding-bottom: 1.9rem;
 }
+
+/*Adapting*/
+@media (max-width:1170px){
+    html{
+        font-size: 0.875rem;
+    }
+}
+@media (max-width:940px) {
+   html{
+    font-size: 0.75rem;
+   }  
+}
+@media (max-width:811px) {
+    html{
+     font-size: 0.625rem;
+    }  
+ }
+ @media (max-width:685px) {
+    html{
+     font-size: 0.5rem;
+    }  
+ }
